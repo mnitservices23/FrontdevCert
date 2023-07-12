@@ -1,0 +1,23 @@
+To check if Dependencies are installed run the below:
+> node --version
+> npm --version
+> jest --version
+
+When started with a new project run the code in terminal to setup Dependencies
+ > nmp init //this will walk your through the package.json file
+ Or run the below for a faster outcome
+ > npm init -y  /// this will answer yes to all the steps
+
+next on your new project run the below command to save Jest as a dependency and save it to the DEVDependencies
+>nmp install --save-dev jest
+
+Once jest is intalled go to the package.json file and update the script section to use jest:
+ "scripts": {
+    "test": "jest"
+  },
+
+now you are good to go - write your test file. Use name convention below:
+    functionName.test.json
+
+once test is finished you can run the command below in the terminal to run tests
+    >npm run test
